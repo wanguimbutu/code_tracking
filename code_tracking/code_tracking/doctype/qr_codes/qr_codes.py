@@ -1,0 +1,15 @@
+# Copyright (c) 2025, wanguimbutu@gmail.com and contributors
+# For license information, please see license.txt
+
+import frappe
+from frappe.model.document import Document
+from frappe import _
+
+
+class QrCodes(Document):
+	pass
+
+@frappe.whitelist(allow_guest=False)
+def check_qr_exists(qr_code):
+    qr = frappe.db.exists("QR Codes", {"qr_code": qr_code})
+    return bool(qr)
