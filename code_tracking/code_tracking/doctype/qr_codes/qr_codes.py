@@ -12,4 +12,4 @@ class QrCodes(Document):
 
 @frappe.whitelist()
 def check_qr_exists(qr_code):
-    return bool(frappe.db.exists("QR Codes", {"qr_code": qr_code}))
+    return bool(frappe.db.exists("Qr Codes", {"qr_code": qr_code}))
