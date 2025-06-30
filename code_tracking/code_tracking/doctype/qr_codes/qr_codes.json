@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:qr_code",
  "creation": "2025-06-18 15:50:32.143780",
@@ -32,7 +33,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-30 11:58:30.511381",
+ "modified": "2025-06-30 15:23:17.003840",
  "modified_by": "Administrator",
  "module": "Code Tracking",
  "name": "Qr Codes",
