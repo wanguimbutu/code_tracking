@@ -9,7 +9,7 @@ from frappe import _
 class QrCodes(Document):
 	pass
 
+
 @frappe.whitelist()
 def check_qr_exists(qr_code):
-    qr = frappe.db.exists("QR Codes", {"qr_code": qr_code})
-    return bool(qr)
+    return bool(frappe.db.exists("QR Codes", {"qr_code": qr_code}))
