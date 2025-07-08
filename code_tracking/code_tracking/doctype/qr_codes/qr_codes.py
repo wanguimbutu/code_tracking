@@ -13,3 +13,7 @@ class QrCodes(Document):
 @frappe.whitelist()
 def check_qr_exists(qr_code):
     return bool(frappe.db.exists("Qr Codes", {"qr_code": qr_code}))
+
+@frappe.whitelist()
+def validate_authenticator(qrcode):
+    return bool(frappe.db.exists("Authenticator", {"qrcode": qrcode}))
